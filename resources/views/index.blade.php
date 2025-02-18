@@ -1,19 +1,31 @@
-@extends('layouts.master')
+extends('layouts.master')
+
 @section('content')
+
 <section id="hero">
     <div class="container">
         <div class="row align-items-center">
-            <!-- Columna del texto -->
-            <div class="col-md-6 text-start">
+            <!--texto -->
+            <div class="text-start">
                 <h1 class="hero-text">EASY TO USE SALE FROM ANY DEVICE. <br> 100% ONLINE.</h1>
+                
+                <h1 class="msj-text">EASY TO USE.</h1>
+                <h1 class="msj-text">SALES FROM ANY DEVICE.</h1>
+                <h1 class="msj-text">100% ONLINE.</h1>
+                    
+                </section>
+                <button class="btn-custom">START NOW</button>
             </div>
-            <!-- Columna de la imagen -->
-            <div class="col-md-6 text-end">
-                <img src="{{ asset('images/fotodemorra.png') }}" alt="Imagen" width="500" height="500" class="img-fluid">
+
+            <!--imagen -->
+    <div class="col-md-6 text-end">
+        <img src="{{ asset('images/fotodemorra.png') }}" alt="Imagen" width="500" height="500" class="img-fluid">
             </div>
         </div>
     </div>
-    <section id="Services" style="display: flex; justify-content: center;">
+</section>
+
+<section id="Services">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -22,13 +34,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://placehold.jp/678x450.png" class="d-block" alt="Slide 1">
+                <img src="https://placehold.jp/1200x400.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://placehold.jp/678x450.png" class="d-block" alt="Slide 2">
+                <img src="https://placehold.jp/1200x400.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://placehold.jp/678x450.png" class="d-block" alt="Slide 3">
+                <img src="https://placehold.jp/1200x400.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -57,6 +69,7 @@
         </div> 
     </div>   
 </section>   
+
 <section id="Choose">
     <div class="container">
         <div class="row">
@@ -65,11 +78,15 @@
         </div>
     </div>
 </section>
+
 <section id="Promotion">
     <div class="container">
         <div class="row">
-            <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas iste ipsam, deserunt eligendi asperiores nemo praesentium quam. Fuga consequatur voluptates possimus blanditiis dicta, officiis aut odio ipsam, rerum, corporis minima?</div>
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas iste ipsam, deserunt eligendi asperiores nemo praesentium quam. Fuga consequatur voluptates possimus blanditiis dicta, officiis aut odio ipsam, rerum, corporis minima?
+            </div>
         </div>
     </div>
-</section>                            
+</section>
+
 @endsection
