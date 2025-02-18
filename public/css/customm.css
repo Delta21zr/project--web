@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.navbar {
+    background-color: #1A8DA7 !important;
+}
+.snakeshop-text {
+    color:white;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.hero-text {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.msj-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px; /* Reducido de 100px a 20px */
+    margin-bottom: 30px; /* Reducido de 100px a 10px */
+    margin-left: 30px;  
+    line-height: 0.5; /* Ajustado para menos espacio entre líneas */
+}
+
+.btn-custom {
+    background-color: white; /* Fondo blanco */
+    color: #178299; /* Texto color azul verdoso */
+    padding: 12px 24px; /* Espaciado interno */
+    border: 2px solid #178299; /* Borde color azul verdoso */
+    border-radius: 50px; /* Bordes redondeados */
+    margin-left: 30px;
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    cursor: pointer; /* Cursor tipo botón */
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #178299; /* Fondo azul verdoso al pasar el mouse */
+    color: white; /* Texto blanco al pasar el mouse */
+}
+
