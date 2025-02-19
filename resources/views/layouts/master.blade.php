@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
+                        <a id="navigationbar" class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
                             SOLUTIONS
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
@@ -44,8 +44,8 @@
                             <li><a class="dropdown-item" href="#">📋 Inventory Management</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="#">COMMERCES</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">PRICES</a></li>
+                    <li class="nav-item"><a id="navigationbar" class="nav-link active" href="#">COMMERCES</a></li>
+                    <li class="nav-item"><a id="navigationbar" class="nav-link active" href="#">PRICES</a></li>
                     <div class="button-container">
                         <button class="custom-button">Register</button>
                         <button class="custom-button">Log in</button>

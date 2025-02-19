@@ -14,10 +14,11 @@
     line-height: 1.2;
 }
 .button-container {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center; /* Centra los botones horizontalmente */
     gap: 15px; /* Espacio entre los botones */
-    border-radius: 50px !important; /* Bordes redondeados */
+    margin-left: 100px;
 }
     
 .custom-button {
@@ -27,7 +28,7 @@
     color: black; /* Texto en negro */
     background-color: white; /* Fondo blanco */
     border: 2px white; /* Borde blanco */
-    
+    border-radius: 50px !important; /* Bordes redondeados */
     padding: 10px 25px; /* Espaciado interno */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -37,7 +38,6 @@
     background-color: rgba(255, 255, 255, 0.8); /* Efecto hover */
 }
     
-
 .hero-text {
     font-family: 'Baloo 2', sans-serif;
     font-size: 50px;
@@ -65,7 +65,6 @@
     border-radius: 50px; /* Bordes redondeados */
     margin-left: 120px;
     font-size: 18px; /* Tamaño de fuente */
-    
     letter-spacing: 2px; /* Espaciado entre letras */
     text-transform: uppercase; /* Texto en mayúsculas */
     cursor: pointer; /* Cursor tipo botón */
@@ -77,3 +76,7 @@
     color: white; /* Texto blanco al pasar el mouse */
 }
 
+#navigationbar{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
