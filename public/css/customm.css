@@ -13,6 +13,31 @@
     margin-bottom: 10px;
     line-height: 1.2;
 }
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 15px; /* Espacio entre los botones */
+    border-radius: 50px !important; /* Bordes redondeados */
+}
+    
+.custom-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black; /* Texto en negro */
+    background-color: white; /* Fondo blanco */
+    border: 2px white; /* Borde blanco */
+    
+    padding: 10px 25px; /* Espaciado interno */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+    
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Efecto hover */
+}
+    
+
 .hero-text {
     font-family: 'Baloo 2', sans-serif;
     font-size: 50px;
@@ -38,9 +63,9 @@
     padding: 12px 24px; /* Espaciado interno */
     border: 2px solid #178299; /* Borde color azul verdoso */
     border-radius: 50px; /* Bordes redondeados */
-    margin-left: 30px;
+    margin-left: 120px;
     font-size: 18px; /* Tamaño de fuente */
-    font-weight: bold; /* Texto en negrita */
+    
     letter-spacing: 2px; /* Espaciado entre letras */
     text-transform: uppercase; /* Texto en mayúsculas */
     cursor: pointer; /* Cursor tipo botón */
