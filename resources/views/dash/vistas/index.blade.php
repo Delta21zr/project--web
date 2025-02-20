@@ -6,4 +6,3 @@
 </div>
 <!-- fin del contenido principal -->
 @include("dash.vistas.parte_inferior")
-
