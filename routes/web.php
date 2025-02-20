@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/admin', function () {
+    return view('dash.vistas.index');
+});
+
 
 Route::get('roles', [RoleController::class, 'index']);
 
