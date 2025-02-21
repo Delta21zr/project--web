@@ -14,9 +14,11 @@
     line-height: 1.2;
 }
 .button-container {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center; /* Centra los botones horizontalmente */
     gap: 15px; /* Espacio entre los botones */
+    margin-left: 100px;
 }
     
 .custom-button {
@@ -36,7 +38,6 @@
     background-color: rgba(255, 255, 255, 0.8); /* Efecto hover */
 }
     
-
 .hero-text {
     font-family: 'Baloo 2', sans-serif;
     font-size: 50px;
@@ -64,7 +65,6 @@
     border-radius: 50px; /* Bordes redondeados */
     margin-left: 120px;
     font-size: 18px; /* Tamaño de fuente */
-    
     letter-spacing: 2px; /* Espaciado entre letras */
     text-transform: uppercase; /* Texto en mayúsculas */
     cursor: pointer; /* Cursor tipo botón */
@@ -128,3 +128,7 @@
 }
 
 
+#navigationbar{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
