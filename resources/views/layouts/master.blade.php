@@ -21,40 +21,42 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" width="60" height="60" class="me-2">
-                <span class="fw-bold snakeshop-text">Snake Shop</span>
-            </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" width="60" height="60" class="me-2">
+            <span class="fw-bold snakeshop-text">Snake Shop</span>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a id="navigationbar" class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
-                            SOLUTIONS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <li><a class="dropdown-item" href="#">🖥️ Point of Sale</a></li>
-                            <li><a class="dropdown-item" href="#">🛒 Online Store</a></li>
-                            <li><a class="dropdown-item" href="#">📋 Inventory Management</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a id="navigationbar" class="nav-link active" href="#">COMMERCES</a></li>
-                    <li class="nav-item"><a id="navigationbar" class="nav-link active" href="#">PRICES</a></li>
-                    <div class="button-container">
-                        <button class="custom-button">Register</button>
-                        <button class="custom-button">Log in</button>
-                    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown">
+                        SOLUTIONS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                        <li><a class="dropdown-item" href="#">🖥 Point of Sale</a></li>
+                        <li><a class="dropdown-item" href="#">🛒 Online Store</a></li>
+                        <li><a class="dropdown-item" href="#">📋 Inventory Management</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="#">COMMERCES</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">PRICES</a></li>
 
-                </ul>
-            </div>
+                <!-- Botones de Registro y Log in -->
+                <div class="button-container">
+                    <button class="custom-button">Register</button>
+                    <a href="{{ route('login') }}" class="custom-button">Log in</a>
+                </div>
+            </ul>
         </div>
-    </nav>  
+    </div>
+</nav>
+
 
     <!-- Contenido dinámico -->
     @yield('content')

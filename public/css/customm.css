@@ -14,11 +14,9 @@
     line-height: 1.2;
 }
 .button-container {
-    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center; /* Centra los botones horizontalmente */
     gap: 15px; /* Espacio entre los botones */
-    margin-left: 100px;
 }
     
 .custom-button {
@@ -38,6 +36,7 @@
     background-color: rgba(255, 255, 255, 0.8); /* Efecto hover */
 }
     
+
 .hero-text {
     font-family: 'Baloo 2', sans-serif;
     font-size: 50px;
@@ -65,6 +64,7 @@
     border-radius: 50px; /* Bordes redondeados */
     margin-left: 120px;
     font-size: 18px; /* Tamaño de fuente */
+    
     letter-spacing: 2px; /* Espaciado entre letras */
     text-transform: uppercase; /* Texto en mayúsculas */
     cursor: pointer; /* Cursor tipo botón */
@@ -75,8 +75,56 @@
     background-color: #178299; /* Fondo azul verdoso al pasar el mouse */
     color: white; /* Texto blanco al pasar el mouse */
 }
-
-#navigationbar{
-    color: white;
-    font-family: 'Poppins', sans-serif;
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.brand-name {
+    color: #007b8f;
+    font-weight: bold;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+.social-buttons button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-buttons img {
+    width: 25px;
+}
+
+.form-check-label a {
+    color: #007b8f;
+    text-decoration: none;
+}
+
+
