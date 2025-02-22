@@ -27,7 +27,23 @@
 </section>
 
 <!-- Services Section -->
-</div>
+<section id="Services">
+    <div class="container">
+        <div class="row justify-content-center"> <!-- Center the carousel -->
+            <div class="col-md-8"> <!-- Adjust the width of the carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/1.png" class="d-block w-100" alt="..." /> <!-- Use w-100 for full width -->
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/2.png" class="d-block w-100" alt="..." />
+                        </div>
                         <div class="carousel-item">
                             <img src="images/3.png" class="d-block w-100" alt="..." />
                         </div>
