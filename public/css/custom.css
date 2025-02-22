@@ -1,0 +1,24 @@
+
+.navbar {
+    background-color: #1A8DA7 !important; /* Cambia este código de color */
+}
+
+.carousel-inner {
+    width: 100%;          /* Full width */
+    height: auto;        /* Let the height adjust based on the image */
+    overflow: hidden;     /* Hide any overflow */
+}
+
+.carousel-item img {
+    object-fit: contain;  /* Ensure the entire image is visible */
+    width: 100%;          /* Ensure image takes full width */
+    height: auto;         /* Let the height adjust based on the image */
+}
+.carousel-inner {
+    max-width: 700px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
