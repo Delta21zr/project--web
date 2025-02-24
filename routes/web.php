@@ -30,7 +30,9 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('dash.vistas.index');
 });
-
+Route::get('/button', function () {
+    return view('dash.vistas.ventas');
+});
 
 Route::get('roles', [RoleController::class, 'index']);
 
