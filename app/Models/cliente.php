@@ -9,8 +9,9 @@ class Cliente extends Model
 {
     use HasFactory;
 
-    protected $table = 'clientes';
-    protected $fillable = ['nombre', 'apellido1', 'apellido2'];
+    protected $table = 'clientes'; // Asegurar el nombre correcto de la tabla
+    public $timestamps = false; // Evita el error de created_at y updated_at
 
-    public $timestamp = false;
+    protected $fillable = ['nombre', 'apellido1', 'apellido2'];
 }
+
