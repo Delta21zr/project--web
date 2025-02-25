@@ -1,0 +1,33 @@
+<!-- resources/views/clientes/index.blade.php -->
+
+@extends('layouts.app')  <!-- Usar el layout que ya tienes -->
+
+@section('content')
+    <div class="container">
+        <h1>Listado de Clientes</h1>
+        
+        <!-- Si hay clientes, se muestra la tabla -->
+        @if($clientes->isEmpty())
+            <p>No hay clientes registrados.</p>
+        @else
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($clientes as $cliente)
+                        <tr>
+                            <td>{{ $cliente->nombre }}</td>
+                            <td>{{ $cliente->apellido1 }}</td>
+                            <td>{{ $cliente->apellido2 }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        @endif
+    </div>
+@endsection
