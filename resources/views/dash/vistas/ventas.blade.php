@@ -1,5 +1,4 @@
 @include ("dash.vistas.parte_superior")
-
 <!-- inicio del contenido principal -->
 <!DOCTYPE html>
 <html lang="en">
