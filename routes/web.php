@@ -30,3 +30,6 @@ Route::get('/clientes/leer', [ClientesController::class, 'leer'])->name('cliente
 Route::post('/clientes/store', [ClientesController::class, 'store'])->name('clientes.store');
 Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
 
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('roles', [RoleController::class, 'index']);
+});
