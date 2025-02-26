@@ -5,11 +5,11 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ClientesController;
 
 Route::get('/login', function () {
-    return view('login'); // Debe coincidir con el nombre del archivo en resources/views/
+    return view('login');
 })->name('login');
 
 Route::get('/register', function () {
-    return view('register'); // Asegúrate de tener un archivo register.blade.php
+    return view('register');
 })->name('register');
 
 Route::get('/', function () {
@@ -20,6 +20,12 @@ Route::get('/admin', function () {
     return view('dash.vistas.index');
 });
 
+Route::get('/button', function () {
+    return view('dash.vistas.ventas');
+});
+
+
 Route::get('/clientes/crear', [ClientesController::class, 'crear'])->name('clientes.crear');
 Route::post('/clientes/store', [ClientesController::class, 'store'])->name('clientes.store');
 Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
+
