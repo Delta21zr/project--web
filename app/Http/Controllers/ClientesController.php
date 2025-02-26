@@ -11,6 +11,15 @@ class ClientesController extends Controller
         return view('dash.vistas.clientes.crear');
     }
 
+
+    public function leer() {
+    $clientes = Cliente::all(); // Cliente con mayúscula inicial
+        return view ('dash.vistas.clientes.leer', compact('clientes'));
+    //dd($clientes);
+    // return view('dash.vistas.clientes.crear');
+}
+
+
     public function index() {
         // Obtener todos los clientes de la base de datos
         $clientes = Cliente::all();

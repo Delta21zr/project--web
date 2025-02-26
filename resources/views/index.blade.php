@@ -62,6 +62,11 @@
     </div>
 </section>
 <style>
+    /* Agregar padding superior a la sección de Services */
+    #Services {
+        padding-top: 50px; /* Ajusta el valor según sea necesario */
+    }
+
     .carousel-inner {
         width: 700px;          /* Set fixed width */
         height: 500px;         /* Set fixed height */
