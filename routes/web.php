@@ -21,5 +21,6 @@ Route::get('/admin', function () {
 });
 
 Route::get('/clientes/crear', [ClientesController::class, 'crear'])->name('clientes.crear');
+Route::get('/clientes/leer', [ClientesController::class, 'leer'])->name('clientes.leer');
 Route::post('/clientes/store', [ClientesController::class, 'store'])->name('clientes.store');
 Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
