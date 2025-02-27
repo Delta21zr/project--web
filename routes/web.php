@@ -2,26 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\ClientesController;
 
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
 Route::get('/register', function () {
     return view('register');
 })->name('register');
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('index');
@@ -31,9 +20,16 @@ Route::get('/admin', function () {
     return view('dash.vistas.index');
 });
 
+Route::get('/button', function () {
+    return view('dash.vistas.ventas');
+});
 
-Route::get('roles', [RoleController::class, 'index']);
 
-//Auth::routes();
+Route::get('/clientes/crear', [ClientesController::class, 'crear'])->name('clientes.crear');
+Route::get('/clientes/leer', [ClientesController::class, 'leer'])->name('clientes.leer');
+Route::post('/clientes/store', [ClientesController::class, 'store'])->name('clientes.store');
+Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('roles', [RoleController::class, 'index']);
+});

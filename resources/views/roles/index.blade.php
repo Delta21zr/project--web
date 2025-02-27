@@ -1,23 +1,14 @@
-@extends('layouts.master')
+@extends('dash.layouts.app')
+
 @section('content')
 <div class="container">
-    <table class="table table-dark table-striped">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th> Name</th>
-                <th>Key name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($roles as $role)
-            <tr>
-                <rd>{{$role ->id}}</rd>
-                <rd>{{$role ->name}}</rd>
-                <rd>{{$role ->key_name}}</rd>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-</div> 
+    <h1>Lista de clientes</h1>
+
+    <!-- Puedes agregar la lógica para mostrar los clientes aquí -->
+    <ul>
+        @foreach($clientes as $cliente)
+            <li>{{ $cliente->nombre }} {{ $cliente->apellido1 }} {{ $cliente->apellido2 }}</li>
+        @endforeach
+    </ul>
+</div>
 @endsection
