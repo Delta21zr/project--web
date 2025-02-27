@@ -17,8 +17,16 @@ class ClientesController extends Controller
         return view ('dash.vistas.clientes.leer', compact('clientes'));
     //dd($clientes);
     // return view('dash.vistas.clientes.crear');
-}
-
+    }
+    public function update(Request $request, clientes $cliente) {
+        $validatedData = $request->validate([
+            'nombre' => 'required|string|max:255', 
+            'apellido1' => 'required|string|max:255', 
+            'apellido2' => 'required|string|max:255', 
+        ]);
+        $cliente->update($request->all());
+        return redirect()->route('clientes.index')->with('success', 'Cliente actualizado correctamente');
+    }
 
     public function index() {
         // Obtener todos los clientes de la base de datos
