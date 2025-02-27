@@ -1,14 +1,24 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Snake Shop</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-@section('content')
 <div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="card p-4 shadow" style="width: 400px; border-radius: 15px;">
+    <div>
         <div class="text-center">
-            <img src="{{ asset('images/logo.png') }}" alt="Snake Shop Logo" width="60">
-            <h3 class="fw-bold mt-2" style="color: #0077b6;">Snake Shop</h3>
+            <img src="{{ asset('images/logoazul.png') }}" alt="Snake Shop Logo" width="100">
+            <h2 class="fw-bold mt-2" style="color:rgb(24, 43, 53);">Snake Shop</h2>
         </div>
 
-        <h5 class="text-center mt-3 fw-bold">Enter your data to log in</h5>
+        <h5 class=" mt-3 fw-bold">Login to your account</h5>
+        <h5 class="mt-3 fs-10 fw-normal">Don't have an account yet? Register and try it<b1> for 14 days free</h5>
+
 
         <form action="{{ route('login') }}" method="POST">
             @csrf
@@ -32,7 +42,7 @@
         <div class="d-flex justify-content-center gap-3">
             <button class="btn btn-light border"><img src="{{ asset('images/google.png') }}" alt="Google" width="20"></button>
             <button class="btn btn-light border"><img src="{{ asset('images/apple.png') }}" alt="Apple" width="20"></button>
-            <button class="btn btn-light border"><img src="{{ asset('images/facebook.png') }}" alt="Facebook" width="20"></button>
+            <button class="btn btn-light border"><img src="{{ asset('images/facebook.png') }}" alt="Facebook" width="35"></button>
         </div>
 
         <div class="form-check mt-3">
@@ -47,5 +57,9 @@
         </div>
     </div>
 </div>
-@endsection
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
 

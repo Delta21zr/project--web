@@ -6,7 +6,8 @@
     <title>Register</title>
 </head>
 <body>
-    <h1>Register Page</h1>
-    <p>This is a placeholder for the registration page.</p>
+<img src="{{ asset('images/phasmo.jpg') }}" alt="Logo" width="600" height="600" class="me-2">
+    <h1>Register</h1>
+    <p>Prueba.</p>
 </body>
 </html>
