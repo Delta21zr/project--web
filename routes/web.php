@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 
 Route::get('/login', function () {
-    return view('login'); // Debe coincidir con el nombre del archivo en resources/views/
+    return view('login');
 })->name('login');
 Route::get('/register', function () {
-    return view('register'); // Asegúrate de tener un archivo register.blade.php
+    return view('register');
 })->name('register');
 
 
