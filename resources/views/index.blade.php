@@ -107,7 +107,7 @@
                 <div class="row d-flex justify-content-center"> <!-- Center the cards -->
                     <!-- INITIAL Plan -->
                     <div class="col-md-4 text-center d-flex">
-                        <div class="card mb-4 shadow w-100" style="border-radius: 15px; border: none;">
+                        <div class="card mb-4 shadow w-100 mx-3" style="border-radius: 15px; border: none; background-color: rgba(217, 217, 217, 0.4);">
                             <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: none;">
                                 <h4 class="my-0 font-weight-normal">INITIAL</h4>
                             </div>
@@ -126,7 +126,7 @@
 
                     <!-- ESSENTIAL Plan -->
                     <div class="col-md-4 text-center d-flex">
-                        <div class="card mb-4 shadow w-100" style="border-radius: 15px; border: none; background-color: #e3f2fd;">
+                        <div class="card mb-4 shadow w-100 mx-3" style="border-radius: 15px; border: none; background-color: #e3f2fd;">
                             <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: none;">
                                 <h4 class="my-0 font-weight-normal">ESSENTIAL</h4>
                             </div>
@@ -146,7 +146,7 @@
 
                     <!-- PRO Plan -->
                     <div class="col-md-4 text-center d-flex">
-                        <div class="card mb-4 shadow w-100" style="border-radius: 15px; border: none;">
+                        <div class="card mb-4 shadow w-100 mx-3" style="border-radius: 15px; border: none; background-color: rgba(217, 217, 217, 0.4);">
                             <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: none;">
                                 <h4 class="my-0 font-weight-normal">PRO</h4>
                             </div>
@@ -169,7 +169,7 @@
 
             <!-- PRICES Text Column -->
             <div class="col-md-2 d-flex align-items-center justify-content-center"> <!-- Adjusted width -->
-                <h2 class="prices-text" style="writing-mode: vertical-lr; transform: rotate(180deg); color:rgb(3, 116, 136); font-size: 6.0rem;">PRICES</h2> <!-- Increased font size -->
+                <h2 class="prices-text" style="writing-mode: vertical-lr; transform: rotate(180deg); color: #1a8da7; font-size: 6.0rem;">PRICES</h2> <!-- Increased font size -->
             </div>
         </div>
     </div>
@@ -199,55 +199,136 @@
     }
 </style>
 
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Optional: Add custom CSS for further styling -->
-<style>
-    .prices-text {
-        font-size: 3rem; /* Adjust the font size */
-        font-weight: bold; /* Adjust the font weight */
-        color: #333; /* Adjust the color */
-    }
-</style>
-
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Optional: Add custom CSS for further styling -->
-<style>
-    .prices-text {
-        font-size: 3rem; /* Adjust the font size */
-        font-weight: bold; /* Adjust the font weight */
-        color: #333; /* Adjust the color */
-        margin-left: -20px; /* Bring the text closer to the cards */
-    }
-</style>
-
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Add FontAwesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<!-- Choose Section -->
-<section id="Choose" class="mt-5">
+<!-- Why Choose Snake Shop Section -->
+<section id="why-choose-snake-shop" class="section mt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="col-md-8">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-4">
+                <h1 class="display-4 heading-text">Why choose Snake Shop?</h1>
+            </div>
+
+            <!-- Card Column -->
+            <div class="col-md-8">
+                <div class="card shadow" style="border-radius: 15px; background-color: rgba(217, 217, 217, 0.4);">
+                    <div class="card-body">
+                        <!-- Comparison Table -->
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center"></th>
+                                    <th scope="col" class="text-center">OTHERS</th>
+                                    <th scope="col" class="text-center">SNAKE SHOP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="number-icon">1</span>
+                                        You can start trading immediately
+                                    </td>
+                                    <td class="text-center text-danger">✗</td>
+                                    <td class="text-center text-success">✓</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="number-icon">2</span>
+                                        Free inventory loading within 24 hours
+                                    </td>
+                                    <td class="text-center text-danger">✗</td>
+                                    <td class="text-center text-success">✓</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="number-icon">3</span>
+                                        No need to buy specific equipment
+                                    </td>
+                                    <td class="text-center text-danger">✗</td>
+                                    <td class="text-center text-success">✓</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="number-icon">4</span>
+                                        Access from anywhere
+                                    </td>
+                                    <td class="text-center text-danger">✗</td>
+                                    <td class="text-center text-success">✓</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="number-icon">5</span>
+                                        The most affordable price
+                                    </td>
+                                    <td class="text-center text-danger">✗</td>
+                                    <td class="text-center text-success">✓</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="number-icon">6</span>
+                                        You can try it for free
+                                    </td>
+                                    <td class="text-center text-danger">✗</td>
+                                    <td class="text-center text-success">✓</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- Add Baloo font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<style>
+    #why-choose-snake-shop h1.heading-text {
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-family: 'Baloo', cursive;
+        color: #1a8da7;
+    }
+
+    #why-choose-snake-shop .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #D9D9D9; /* Set card background color */
+    }
+
+    #why-choose-snake-shop .table {
+        font-size: 1.1rem;
+    }
+
+    #why-choose-snake-shop .text-danger {
+        color: #dc3545;
+    }
+
+    #why-choose-snake-shop .text-success {
+        color: #28a745;
+    }
+
+    #why-choose-snake-shop th {
+        font-weight: bold;
+    }
+
+    #why-choose-snake-shop .number-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #1a8da7; /* Same as before */
+        color: white; /* Make text white */
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-right: 8px;
+        border: none; /* Remove border */
+    }
+</style>
+
 
 <!-- Promotion Section -->
 <section id="Promotion" class="mt-5">
