@@ -97,16 +97,147 @@
         transform: translateY(-50%);
     }
 </style>
+
 <!-- Prices Section -->
 <section id="Prices" class="section mt-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="col-md-4">Lorem ipsum dolor sit amet consectetur.</div>
-            <div class="col-md-4">Lorem ipsum dolor sit amet consectetur.</div>
-        </div> 
-    </div>   
-</section>   
+        <div class="row justify-content-center"> <!-- Center the row -->
+            <!-- Cards Column -->
+            <div class="col-md-10"> <!-- Increased width to reduce empty space -->
+                <div class="row d-flex justify-content-center"> <!-- Center the cards -->
+                    <!-- INITIAL Plan -->
+                    <div class="col-md-4 text-center d-flex">
+                        <div class="card mb-4 shadow w-100" style="border-radius: 15px; border: none;">
+                            <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: none;">
+                                <h4 class="my-0 font-weight-normal">INITIAL</h4>
+                            </div>
+                            <div class="card-body text-left pl-4 pr-4 d-flex flex-column">
+                                <h1 class="card-title pricing-card-title text-center">$110 <small class="text-muted">MX/Month</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li><i class="fas fa-check"></i> 1 user</li>
+                                    <li><i class="fas fa-check"></i> Unlimited products and sales</li>
+                                    <li><i class="fas fa-check"></i> Inventory Management</li>
+                                    <li><i class="fas fa-check"></i> Point of Sale</li>
+                                </ul>
+                                <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto" style="border-radius: 10px;">START NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ESSENTIAL Plan -->
+                    <div class="col-md-4 text-center d-flex">
+                        <div class="card mb-4 shadow w-100" style="border-radius: 15px; border: none; background-color: #e3f2fd;">
+                            <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: none;">
+                                <h4 class="my-0 font-weight-normal">ESSENTIAL</h4>
+                            </div>
+                            <div class="card-body text-left pl-4 pr-4 d-flex flex-column">
+                                <h1 class="card-title pricing-card-title text-center">$250 <small class="text-muted">MX/Month</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li><i class="fas fa-check"></i> 2 Users</li>
+                                    <li><i class="fas fa-check"></i> Unlimited products and sales</li>
+                                    <li><i class="fas fa-check"></i> Inventory Management</li>
+                                    <li><i class="fas fa-check"></i> Shopping</li>
+                                    <li><i class="fas fa-check"></i> Point of Sale</li>
+                                </ul>
+                                <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto" style="border-radius: 10px;">START NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRO Plan -->
+                    <div class="col-md-4 text-center d-flex">
+                        <div class="card mb-4 shadow w-100" style="border-radius: 15px; border: none;">
+                            <div class="card-header" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border: none;">
+                                <h4 class="my-0 font-weight-normal">PRO</h4>
+                            </div>
+                            <div class="card-body text-left pl-4 pr-4 d-flex flex-column">
+                                <h1 class="card-title pricing-card-title text-center">$450 <small class="text-muted">MX/Month</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li><i class="fas fa-check"></i> 3 Users</li>
+                                    <li><i class="fas fa-check"></i> Unlimited products and sales</li>
+                                    <li><i class="fas fa-check"></i> Inventory Management</li>
+                                    <li><i class="fas fa-check"></i> Point of Sale</li>
+                                    <li><i class="fas fa-check"></i> Shopping</li>
+                                    <li><i class="fas fa-check"></i> Online Catalog</li>
+                                </ul>
+                                <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto" style="border-radius: 10px;">START NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRICES Text Column -->
+            <div class="col-md-2 d-flex align-items-center justify-content-center"> <!-- Adjusted width -->
+                <h2 class="prices-text" style="writing-mode: vertical-lr; transform: rotate(180deg); color:rgb(3, 116, 136); font-size: 6.0rem;">PRICES</h2> <!-- Increased font size -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add Baloo font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+
+<!-- Optional: Add custom CSS for further styling -->
+<style>
+    .prices-text {
+        font-family: 'Baloo', cursive; /* Apply Baloo font */
+        font-size: 3.5rem; /* Increased font size */
+        font-weight: bold; /* Adjust the font weight */
+        color: #333; /* Adjust the color */
+    }
+
+    .card {
+        font-size: 1.1rem; /* Slightly increased font size for card content */
+    }
+
+    .card-title {
+        font-size: 2.5rem; /* Increased font size for card titles */
+    }
+</style>
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Optional: Add custom CSS for further styling -->
+<style>
+    .prices-text {
+        font-size: 3rem; /* Adjust the font size */
+        font-weight: bold; /* Adjust the font weight */
+        color: #333; /* Adjust the color */
+    }
+</style>
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Optional: Add custom CSS for further styling -->
+<style>
+    .prices-text {
+        font-size: 3rem; /* Adjust the font size */
+        font-weight: bold; /* Adjust the font weight */
+        color: #333; /* Adjust the color */
+        margin-left: -20px; /* Bring the text closer to the cards */
+    }
+</style>
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- Choose Section -->
 <section id="Choose" class="mt-5">

@@ -2,37 +2,23 @@
 .navbar {
     background-color: #1A8DA7 !important; /* Cambia este código de color */
 }
-    /* Agregar padding superior a la sección de Services */
-    #Services {
-        padding-top: 50px; /* Ajusta el valor según sea necesario */
-    }
 
-    .carousel-inner {
-        width: 700px;          /* Set fixed width */
-        height: 500px;         /* Set fixed height */
-        margin: 0 auto;        /* Center the carousel horizontally */
-        overflow: hidden;     /* Hide any overflow */
-    }
+.carousel-inner {
+    width: 100%;          /* Full width */
+    height: auto;        /* Let the height adjust based on the image */
+    overflow: hidden;     /* Hide any overflow */
+}
 
-    .carousel-item img {
-        object-fit: contain;  /* Ensure the entire image is visible */
-        width: 100%;          /* Ensure image takes full width */
-        height: 100%;         /* Ensure image takes full height */
-    }
-
-    /* Custom styles for the carousel control buttons */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        filter: invert(100%); /* Invert the color to black */
-    }
-
-    /* Optional: Change the background color of the control buttons */
-    .carousel-control-prev,
-    .carousel-control-next {
-        background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
-        width: 40px; /* Adjust width */
-        height: 40px; /* Adjust height */
-        border-radius: 50%; /* Make it circular */
-        top: 50%; /* Center vertically */
-        transform: translateY(-50%);
-    }
+.carousel-item img {
+    object-fit: contain;  /* Ensure the entire image is visible */
+    width: 100%;          /* Ensure image takes full width */
+    height: auto;         /* Let the height adjust based on the image */
+}
+.carousel-inner {
+    max-width: 700px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
