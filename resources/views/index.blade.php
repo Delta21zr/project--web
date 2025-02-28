@@ -6,19 +6,22 @@
 <section id="hero">
     <div class="container">
         <div class="row align-items-center">
-            <!-- Texto alineado a la izquierda -->
+            <!-- Text Column -->
             <div class="col-md-6 text-start">
                 <h1 class="hero-text">EASY TO USE SALE FROM ANY DEVICE. <br> 100% ONLINE.</h1>
                 
-                <h1 class="msj-text">EASY TO USE.</h1>
-                <h1 class="msj-text">SALES FROM ANY DEVICE.</h1>
-                <h1 class="msj-text">100% ONLINE.</h1>
+                <!-- List with Checkmark Icons -->
+                <div class="msj-text">
+                    <p><i class="fas fa-check"></i> EASY TO USE.</p>
+                    <p><i class="fas fa-check"></i> SALES FROM ANY DEVICE.</p>
+                    <p><i class="fas fa-check"></i> 100% ONLINE.</p>
+                </div>
 
-                
+                <!-- Button -->
                 <button class="btn-custom">START NOW</button>
             </div>
 
-            <!-- Imagen alineada a la derecha -->
+            <!-- Image Column -->
             <div class="col-md-6 text-end">
                 <img src="{{ asset('images/fotodemorra.png') }}" alt="Imagen" width="500" height="500" class="img-fluid">
             </div>
@@ -26,75 +29,128 @@
     </div>
 </section>
 
+<!-- Custom CSS -->
+<style>
+    /* Hero Section Styling */
+    #hero .hero-text {
+        font-size: 2.5rem; /* Adjust size as needed */
+        font-weight: bold;
+        color: #333; /* Adjust color as needed */
+        margin-bottom: 20px; /* Add space below the heading */
+    }
+
+    /* Message Text Styling */
+    #hero .msj-text {
+        font-size: 1.5rem; /* Adjust size as needed */
+        color: #333; /* Adjust color as needed */
+    }
+
+    /* Checkmark Icon Styling */
+    #hero .msj-text i {
+        color: #1a8da7; /* Match the color of the checkmarks */
+        margin-right: 10px; /* Add space between icon and text */
+    }
+
+    /* Button Styling */
+    #hero .btn-custom {
+        font-size: 1.2rem; /* Adjust size as needed */
+        padding: 10px 20px;
+        border-radius: 50px; /* Rounded corners */
+        background-color: #1a8da7; /* Button color */
+        border: none;
+        color: #fff; /* White text */
+        margin-top: 20px; /* Add space above the button */
+    }
+
+    /* Button Hover Effect */
+    #hero .btn-custom:hover {
+        background-color: #14718a; /* Darker shade on hover */
+    }
+</style>
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 <!-- Services Section -->
 <section id="Services">
     <div class="container">
         <div class="row justify-content-center"> <!-- Center the carousel -->
-            <div class="col-md-8"> <!-- Adjust the width of the carousel -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="col-md-10"> <!-- Adjust the width of the carousel -->
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Original Slides -->
+                        <div class="carousel-slide">
+                            <img src="images/1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/2.png" alt="Image 2" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/3.png" alt="Image 3" />
+                        </div>
+                        <!-- Duplicate Slides for Infinite Loop -->
+                        <div class="carousel-slide">
+                            <img src="images/1.png" alt="Image 1" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/2.png" alt="Image 2" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/3.png" alt="Image 3" />
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/1.png" class="d-block w-100" alt="..." /> <!-- Use w-100 for full width -->
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/2.png" class="d-block w-100" alt="..." />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/3.png" class="d-block w-100" alt="..." />
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Custom CSS -->
 <style>
-    /* Agregar padding superior a la sección de Services */
+    /* Add padding to the Services section */
     #Services {
-        padding-top: 50px; /* Ajusta el valor según sea necesario */
+        padding-top: 50px; /* Adjust as needed */
     }
 
-    .carousel-inner {
-        width: 700px;          /* Set fixed width */
-        height: 500px;         /* Set fixed height */
-        margin: 0 auto;        /* Center the carousel horizontally */
-        overflow: hidden;     /* Hide any overflow */
+    /* Carousel Container */
+    .carousel-container {
+        width: 100%;
+        overflow: hidden; /* Hide overflow to create sliding effect */
+        position: relative;
     }
 
-    .carousel-item img {
-        object-fit: contain;  /* Ensure the entire image is visible */
-        width: 100%;          /* Ensure image takes full width */
-        height: 100%;         /* Ensure image takes full height */
+    /* Carousel Track */
+    .carousel-track {
+        display: flex;
+        width: 200%; /* Double the width to accommodate duplicated slides */
+        animation: slide 20s linear infinite; /* Slower animation (20s) */
     }
 
-    /* Custom styles for the carousel control buttons */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        filter: invert(100%); /* Invert the color to black */
+    /* Carousel Slide */
+    .carousel-slide {
+        flex: 1 0 33.33%; /* Each slide takes 1/3 of the container width */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center; /* Center images vertically */
+        justify-content: center; /* Center images horizontally */
     }
 
-    /* Optional: Change the background color of the control buttons */
-    .carousel-control-prev,
-    .carousel-control-next {
-        background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
-        width: 40px; /* Adjust width */
-        height: 40px; /* Adjust height */
-        border-radius: 50%; /* Make it circular */
-        top: 50%; /* Center vertically */
-        transform: translateY(-50%);
+    /* Carousel Images */
+    .carousel-slide img {
+        width: 100%; /* Adjust image width */
+        height: 500px; /* Fixed height for all images */
+        object-fit: cover; /* Ensure images fill the container */
+        border-radius: 10px; /* Optional: Add rounded corners */
+    }
+
+    /* Keyframes for Infinite Sliding Animation */
+    @keyframes slide {
+        0% {
+            transform: translateX(0); /* Start from the beginning */
+        }
+        100% {
+            transform: translateX(-50%); /* Slide to the left by 50% */
+        }
     }
 </style>
 
@@ -331,12 +387,224 @@
 
 
 <!-- Promotion Section -->
-<section id="Promotion" class="mt-5">
+<section id="Promotion" class="mt-5" style="padding-top: 100px;">
     <div class="container">
-        <div class="row">
-            <div class="col">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="row align-items-center justify-content-center"> <!-- Center the row -->
+            <!-- Left Column -->
+            <div class="col-md-4 text-center text-md-start"> <!-- Adjusted column width and alignment -->
+                <h2 class="promotion-price">- $119 MXN final</h2>
+                <ul class="list-unstyled promotion-features">
+                    <li><i class="fas fa-check"></i> Works on any device</li>
+                    <li><i class="fas fa-check"></i> No installations required</li>
+                    <li><i class="fas fa-check"></i> We load the inventory for you</li>
+                </ul>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-4 text-center text-md-end"> <!-- Adjusted column width and alignment -->
+                <div class="promotion-buttons">
+                    <div class="promotion-free-card">
+                        <p class="promotion-free">14 DAYS FREE!!!!</p>
+                    </div>
+                    <a href="#" class="btn btn-custom btn-lg mt-2">START NOW</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- Custom CSS -->
+<style>
+    /* Import Baloo and Poppins fonts from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Baloo&family=Poppins:wght@400;500&display=swap');
+
+    /* Promotion Price Styling */
+    .promotion-price {
+        font-family: 'Baloo', cursive;
+        font-size: 5rem; /* Increased font size */
+        font-weight: bold;
+        color: #1a8da7; /* New text color */
+        margin-bottom: 20px; /* Add space below the price */
+    }
+
+    /* Promotion Features Styling */
+    .promotion-features {
+        font-size: 1.2rem; /* Adjust size as needed */
+        color: #333; /* Adjust color as needed */
+        padding-left: 0; /* Remove default padding */
+    }
+
+    /* Promotion Features List Items */
+    .promotion-features li {
+        display: flex;
+        align-items: center; /* Align icon and text vertically */
+        margin-bottom: 10px; /* Add space between list items */
+    }
+
+    /* Checkmark Icon Styling */
+    .promotion-features li i {
+        color: #1a8da7; /* Match the color of the price */
+        margin-right: 10px; /* Add space between icon and text */
+    }
+
+    /* Promotion Free Card Styling */
+    .promotion-free-card {
+        display: inline-block;
+        background-color: rgba(217, 217, 217, 0.29); /* Semi-transparent background */
+        color: #1a8da7; /* Text color */
+        padding: 10px 50px; /* Adjusted padding for better proportions */
+        border-radius: 50px; /* Oval shape */
+        text-align: center;
+        font-size: 2rem; /* Slightly smaller text */
+        font-weight: 400; /* Less thin text */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        width: auto; /* Auto width to fit content */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2; /* Adjusted line height to fit text */
+        font-family: 'Poppins', sans-serif; /* Poppins font */
+    }
+
+    /* Custom Button Styling */
+    .btn-custom {
+        font-size: 1.2rem; /* Adjust size as needed */
+        padding: 10px 20px;
+        border-radius: 50px; /* Rounded corners */
+        background-color: #1a8da7; /* New button color */
+        border: none;
+        color: #fff; /* White text */
+        margin-top: 15px; /* Add space above the button */
+    }
+
+    /* Button Hover Effect */
+    .btn-custom:hover {
+        background-color: #14718a; /* Darker shade on hover */
+    }
+
+    /* Container for Buttons */
+    .promotion-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the card and button */
+    }
+</style>
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Last Section of Page -->
+<!-- Contact and Solutions Section -->
+<section id="contact-solutions" class="mt-5" style="background-color: #1A8DA7; color: white;">
+    <div class="container">
+        <div class="row">
+            <!-- Left Column: Placeholder Icon -->
+            <div class="col-md-2 text-center">
+                <img src="images/4.png" class="img-fluid" id="icon-placeholder" />
+            </div>
+
+            <!-- Right Column: Contact, Solutions, and Commerces -->
+            <div class="col-md-10 text-end"> <!-- Align text to the right -->
+                <div class="row">
+                    <!-- Contact Information -->
+                    <div class="col-md-4">
+                        <h3>CONTACT US</h3>
+                        <p>618 310 11 34</p>
+                        <p>SNAKESHOP@GMAIL.COM</p>
+                    </div>
+
+                    <!-- Solutions -->
+                    <div class="col-md-4">
+                        <h3>SOLUTIONS</h3>
+                        <ul class="list-unstyled">
+                            <li>POINT OF SALE</li>
+                            <li>ONLINE STORE</li>
+                            <li>INVENTORY MANAGEMENT</li>
+                        </ul>
+                    </div>
+
+                    <!-- Commerces -->
+                    <div class="col-md-4">
+                        <h3>COMMERCES</h3>
+                        <ul class="list-unstyled">
+                            <li>PHARMACY</li>
+                            <li>GROCERIES</li>
+                            <li>BUTCHER</li>
+                            <li>GREENGROCER</li>
+                            <li>LIBRARIES</li>
+                            <li>JEWELRY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Methods Placeholder -->
+        <div class="row mt-2"> <!-- Reduced margin-top -->
+            <div class="col-md-12 text-center">
+                <img src="images/payment-methods.png" alt="Payment Methods Placeholder" class="img-fluid" id="payment-methods-placeholder" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Section (Thinner Rectangle with Scroll to Top Button) -->
+<section id="new-section" style="background-color: #187484; color: white; padding: 10px 0;">
+    <div class="container text-center">
+        <a href="#top" style="color: white; text-decoration: none;">Scroll to top ↑</a>
+    </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+    /* General Styling */
+    #contact-solutions {
+        padding: 20px 0; /* Reduced padding to make the section less tall */
+    }
+
+    #contact-solutions h3 {
+        font-size: 1.2rem; /* Smaller heading size */
+        font-weight: bold;
+        margin-bottom: 10px; /* Space below headings */
+        color: white; /* White text color */
+    }
+
+    #contact-solutions p, #contact-solutions li {
+        font-size: 1rem; /* Smaller text size */
+        color: white; /* White text color */
+        margin-bottom: 8px; /* Space between items */
+    }
+
+    #contact-solutions ul {
+        padding-left: 0; /* Remove default padding */
+    }
+
+    #contact-solutions ul li {
+        list-style: none; /* Remove bullet points */
+    }
+
+    /* Placeholder Icon Styling */
+    #icon-placeholder {
+        width: 1000px; /* Increased icon size */
+        height: auto;
+        margin-bottom: 10px; /* Space below icon */
+    }
+
+    /* Payment Methods Placeholder Styling */
+    #payment-methods-placeholder {
+        width: 300px; /* Adjust size as needed */
+        height: auto;
+        margin-top: 2px; /* Reduced space above the placeholder */
+    }
+
+    /* Scroll to Top Link */
+    #new-section a {
+        font-size: 0.9rem; /* Smaller text for scroll hint */
+        color: white; /* White text color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    #new-section a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+</style>
 @endsection

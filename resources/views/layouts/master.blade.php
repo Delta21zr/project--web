@@ -47,7 +47,6 @@
                 <li class="nav-item"><a class="nav-link active" href="#">COMMERCES</a></li>
                 <li class="nav-item"><a class="nav-link active" href="#">PRICES</a></li>
 
-
                 <!-- Botones de Registro y Log in -->
                 <div class="button-container">
                     <button class="custom-button">Register</button>
@@ -58,12 +57,11 @@
     </div>
 </nav>
 
-
     <!-- Contenido dinámico -->
     @yield('content')
 
     <!-- Footer -->
-    <footer class="text-center mt-5 p-3 bg-light">
+    <footer class="text-center mt-2 p-3 bg-light"> <!-- Changed mt-5 to mt-2 -->
         <div class="container">
             <p>&copy; 2025 Snake Shop - All rights reserved.</p>
         </div>
