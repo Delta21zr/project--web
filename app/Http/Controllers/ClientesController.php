@@ -22,16 +22,28 @@ class ClientesController extends Controller
         $clientes = Cliente::all(); // Cliente con mayúscula inicial
             return view ('dash.vistas.clientes.eliminar', compact('clientes'));
     }
+public function update(Request $request, $id)
+{
+    // Validación de los datos
+    $validatedData = $request->validate([
+        'nombre' => 'required|string|max:255',
+        'apellido1' => 'required|string|max:255',
+        'apellido2' => 'required|string|max:255',
+    ]);
 
-    public function update(Request $request, clientes $cliente) {
-        $validatedData = $request->validate([
-            'nombre' => 'required|string|max:255', 
-            'apellido1' => 'required|string|max:255', 
-            'apellido2' => 'required|string|max:255', 
-        ]);
+    // Buscar el cliente por el ID
+    $cliente = Cliente::find($id);
+
+    if ($cliente) {
+        // Actualizar los datos
         $cliente->update($request->all());
         return redirect()->route('clientes.index')->with('success', 'Cliente actualizado correctamente');
+    } else {
+        return redirect()->route('clientes.index')->with('error', 'Cliente no encontrado');
     }
+}
+
+
 
     public function index() {
         // Obtener todos los clientes de la base de datos
