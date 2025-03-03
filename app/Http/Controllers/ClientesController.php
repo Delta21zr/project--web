@@ -18,6 +18,11 @@ class ClientesController extends Controller
     //dd($clientes);
     // return view('dash.vistas.clientes.crear');
     }
+    public function eliminar() {
+        $clientes = Cliente::all(); // Cliente con mayúscula inicial
+            return view ('dash.vistas.clientes.eliminar', compact('clientes'));
+    }
+
     public function update(Request $request, clientes $cliente) {
         $validatedData = $request->validate([
             'nombre' => 'required|string|max:255', 
@@ -54,4 +59,26 @@ class ClientesController extends Controller
         // Redirigir con un mensaje de éxito
         return redirect()->route('clientes.index')->with('success', 'Cliente creado correctamente');
     }
+    public function destroy(Request $request)
+    {
+        // Obtener el ID del cliente
+        $Id = $request->input("Idcliente");
+    
+        // Buscar el cliente por el ID usando la columna 'cliente_id'
+        $cliente = Cliente::find($Id);  // Esto buscará en la columna 'cliente_id'
+    
+        if ($cliente) {
+            // Si el cliente existe, eliminarlo
+            $cliente->delete();
+            // Redirigir con mensaje de éxito
+            return redirect()->route('clientes.index')->with('success', 'Cliente borrado correctamente');
+        } else {
+            // Si el cliente no existe, redirigir con mensaje de error
+            return redirect()->route('clientes.index')->with('error', 'Cliente no encontrado');
+        }
+    }
+    
+    
+    
 }
+

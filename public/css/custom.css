@@ -22,3 +22,6 @@
     margin: 0 auto;
     overflow: hidden;
 }
+#Promotion {
+    margin-top: 100px; /* or padding-top: 100px; */
+}
