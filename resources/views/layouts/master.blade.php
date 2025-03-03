@@ -50,7 +50,8 @@
 
                 <!-- Botones de Registro y Log in -->
                 <div class="button-container">
-                    <button class="custom-button">Register</button>
+                    <a href="{{ route('register') }}" class="custom-button">Register</a>
+                    
                     <a href="{{ route('login') }}" class="custom-button">Log in</a>
                 </div>
             </ul>

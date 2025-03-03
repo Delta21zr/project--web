@@ -16,6 +16,14 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/setup-store', function () {
+    return view('setup_store'); 
+})->name('setup.store');
+
+Route::get('/setup-profile', function () {
+    return view('setup_profile');
+})->name('setup.profile');
+
 Route::get('/admin', function () {
     return view('dash.vistas.index');
 });
