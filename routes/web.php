@@ -28,10 +28,15 @@ Route::get('/admin', function () {
     return view('dash.vistas.index');
 });
 
-Route::get('/button', function () {
-    return view('dash.vistas.ventas');
+Route::get('/products', function () {
+    return view('dash.vistas.products');
 });
-
+Route::get('/cards', function () {
+    return view('dash.vistas.cards');
+});
+Route::get('/colors', function () {
+    return view('dash.vistas.colors');
+});
 
 Route::get('/clientes/crear', [ClientesController::class, 'crear'])->name('clientes.crear');
 Route::get('/clientes/leer', [ClientesController::class, 'leer'])->name('clientes.leer');
