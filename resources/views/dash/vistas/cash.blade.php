@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Cards</title>
+    <title>SB Admin 2 - Cash Register</title>
 
 </head>
 

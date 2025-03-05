@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Color Utilities</title>
+    <title>SB Admin 2 - Sales</title>
 </head>
 
 <body id="page-top">
@@ -23,7 +23,6 @@
 
             <!-- Main Content -->
             <div id="content">
-
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">

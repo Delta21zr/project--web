@@ -31,12 +31,23 @@ Route::get('/admin', function () {
 Route::get('/products', function () {
     return view('dash.vistas.products');
 });
-Route::get('/cards', function () {
-    return view('dash.vistas.cards');
+
+Route::get('/cash', function () {
+    return view('dash.vistas.cash');
 });
-Route::get('/colors', function () {
-    return view('dash.vistas.colors');
+
+Route::get('/catalog', function () {
+    return view('dash.vistas.catalog');
 });
+
+Route::get('/custumer', function () {
+    return view('dash.vistas.custumer');
+});
+
+Route::get('/sales', function () {
+    return view('dash.vistas.sales');
+});
+
 
 Route::get('/clientes/crear', [ClientesController::class, 'crear'])->name('clientes.crear');
 Route::get('/clientes/leer', [ClientesController::class, 'leer'])->name('clientes.leer');

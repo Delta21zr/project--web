@@ -57,14 +57,14 @@
 
             <!-- Nav Item - Sales -->
             <li class="nav-item active">
-                <a class="nav-link" href="admin ">
+                <a class="nav-link" href="sales">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Sales</span></a>
             </li>
 
             <!-- Nav Item - Cash -->
             <li class="nav-item active">
-                <a class="nav-link" href="products">
+                <a class="nav-link" href="cash">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Cash</span></a>
             </li>
@@ -87,14 +87,14 @@
 
             <!-- Nav Item - Coustomer -->
             <li class="nav-item active">
-                <a class="nav-link" href="admin ">
+                <a class="nav-link" href="custumer ">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>cCoustumer</span></a>
+                    <span>Custumer</span></a>
             </li>
 
             <!-- Nav Item - Catalog -->
             <li class="nav-item active">
-                <a class="nav-link" href="products">
+                <a class="nav-link" href="catalog">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Catalog</span></a>
             </li>
