@@ -27,7 +27,7 @@
                     <a class="nav-link" href="/clientes/leer">Leer</a> <!-- Nueva opción de lectura -->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/clientes/actualizar">Actualizar</a> <!-- Nueva opción de actualización -->
+                    <!--<a class="nav-link" href="/clientes/actualizar">Actualizar</a> Nueva opción de actualización -->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="javascript:void(0);" tabindex="-1" aria-disabled="true" style="pointer-events: none; color: #6c757d;">Deshabilitado</a>
