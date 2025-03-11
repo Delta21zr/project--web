@@ -11,6 +11,12 @@ class ClientesController extends Controller
     {
         return view('dash.vistas.clientes.crear');
     }
+    public function edit($cliente_id)
+    {
+        $cliente = Cliente::find($cliente_id);
+        return view('dash.vistas.clientes.editar', compact('cliente'));
+    }
+
 
     public function leer()
     {
@@ -27,6 +33,7 @@ class ClientesController extends Controller
         return view('dash.vistas.clientes.eliminar', compact('clientes'));
     }
 
+    // Método para actualizar cliente
     public function update(Request $request, $id)
     {
         // Validar los datos
@@ -41,13 +48,16 @@ class ClientesController extends Controller
     
         if ($cliente) {
             // Actualizar los datos del cliente
-            $cliente->update($request->all());
+            $cliente->nombre = $validatedData['nombre'];
+            $cliente->apellido1 = $validatedData['apellido1'];
+            $cliente->apellido2 = $validatedData['apellido2'];
+            $cliente->save();
+            
             return redirect()->route('clientes.index')->with('success', 'Cliente actualizado correctamente.');
         } else {
             return redirect()->route('clientes.index')->with('error', 'Cliente no encontrado.');
         }
     }
-    
 
     public function index()
     {
@@ -89,20 +99,5 @@ class ClientesController extends Controller
         return redirect()->back()->with('success', 'Cliente eliminado correctamente.');
     }
 
-        public function actualizar($id)
-    {  
-        // Buscar el cliente por su ID
-        $cliente = Cliente::find($id);
-
-        // Verificar si el cliente existe
-        if (!$cliente) {
-            return redirect()->route('clientes.index')->with('error', 'Cliente no encontrado.');
-        }
-
-        // Devolver la vista con el cliente
-        return view('dash.vistas.clientes.actualizar', compact('cliente'));
-    }
-
-}
-
     
+}

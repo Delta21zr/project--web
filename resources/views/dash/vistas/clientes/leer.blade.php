@@ -10,7 +10,6 @@
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido Paterno</th>
                 <th scope="col">Apellido Materno</th>
-                <th scope="col">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -20,9 +19,6 @@
                 <td>{{ $cliente->nombre }}</td>
                 <td>{{ $cliente->apellido1 }}</td>
                 <td>{{ $cliente->apellido2 }}</td>
-                <td>
-                <button type="button" class="btn btn-primary btn-sm">Actualizar</button>
-                </td>
             </tr>
             @endforeach
         </tbody>
