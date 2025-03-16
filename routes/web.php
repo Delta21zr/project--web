@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ClientesController;
-
+use App\Http\Controllers\ProductosController;
 Route::get('/login', function () {
     return view('login');
 })->name('login');
@@ -65,7 +65,22 @@ Route::post('/clientes/store', [ClientesController::class, 'store'])->name('clie
 
 Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
 
+
+
+
+// Rutas de productos - Accesibles para todos (sin autenticación)
+
+Route::get('/productos', [ProductosController::class, 'index'])->name('productos.index');
+Route::get('/productos/crear', [ProductosController::class, 'crear'])->name('productos.crear');
+Route::post('/productos', [ProductosController::class, 'store'])->name('productos.store');
+Route::get('/productos/{id}/editar', [ProductosController::class, 'edit'])->name('productos.edit');
+Route::put('/productos/{id}', [ProductosController::class, 'update'])->name('productos.update');
+Route::delete('/productos/{id}', [ProductosController::class, 'destroy'])->name('productos.destroy');
+
+
 Route::group(['middleware' => ['auth']], function () {
     Route::get('roles', [RoleController::class, 'index']);
+
 });
+
 
