@@ -39,7 +39,7 @@
                         SOLUTIONS
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                        <li><a class="dropdown-item" href="#">🖥 Point of Sale</a></li>
+                        <li><a class="dropdown-item" href="{{ route('point-of-sale') }}">🖥 Point of Sale</a></li>
                         <li><a class="dropdown-item" href="#">🛒 Online Store</a></li>
                         <li><a class="dropdown-item" href="#">📋 Inventory Management</a></li>
                     </ul>

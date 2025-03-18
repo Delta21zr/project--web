@@ -32,6 +32,9 @@ Route::get('/button', function () {
     return view('dash.vistas.ventas');
 });
 
+Route::get('/point-of-sale', function () {
+    return view('point');
+})->name('point-of-sale');
 
 Route::get('/clientes/crear', [ClientesController::class, 'crear'])->name('clientes.crear');
 Route::get('/clientes/leer', [ClientesController::class, 'leer'])->name('clientes.leer');
