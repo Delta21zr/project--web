@@ -39,6 +39,35 @@
     </div>
 </section>
 
+<!-- Replicated Hero Section with Image on the Left -->
+<section id="section2">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6 text-start">
+                <img src="images/image 7.png" alt="Imagen" width="500" height="500" class="img-fluid">
+            </div>
+
+            <!-- Text Column -->
+            <div class="col-md-6 text-start">
+                <h1 class="hero-text section2-title">SINGLE POINT OF SALE <br></h1>
+                
+                <!-- List with Checkmark Icons -->
+                <div class="msj-text">
+                    <p><i class="fas fa-check"></i> INTUITIVE AND EASY TO USE</p>
+                    <p><i class="fas fa-check"></i> SELL WHEREVER YOU ARE</p>
+                    <p><i class="fas fa-check"></i> COMPATIBLE</p>
+                </div>
+
+                <!-- Button -->
+                <div class="button-container-1">
+                    <button class="btn-custom">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- CSS Styles -->
 <style>
     /* Apply Baloo font to all text */
@@ -77,6 +106,10 @@
         margin-bottom: 20px; /* Space below the heading */
     }
 
+    .section2-title {
+        font-size: 3rem; /* Adjust this value to change the size */
+    }
+
     .msj-text {
         font-size: 1rem; /* Smaller font size for msj-text */
         line-height: 1.6; /* Improve readability */
@@ -103,7 +136,8 @@
     }
 
     /* Checkmark Icon Styling */
-    #hero .msj-text i {
+    #hero .msj-text i,
+    #section2 .msj-text i {
         color: #1a8da7; /* Match the color of the checkmarks */
         margin-right: 10px; /* Add space between icon and text */
     }
